@@ -1,0 +1,68 @@
+# EditorConfig for Unity Project - Teacher's Style Guide
+
+root = true
+
+[*]
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+insert_final_newline = true
+charset = utf-8
+
+[*.cs]
+#### BRACES RULES ####
+# Braces and curly brackets always open-close in aligned mode (Allman style)
+csharp_new_line_before_open_brace = all
+csharp_new_line_before_else = true
+csharp_new_line_before_catch = true
+csharp_new_line_before_finally = true
+
+#### NAMING CONVENTIONS ####
+
+# Classes & Structs: TitleCase
+dotnet_naming_rule.types_rule.symbols = types
+dotnet_naming_rule.types_rule.style = title_case_style
+dotnet_naming_rule.types_rule.severity = suggestion
+
+# Public Fields & Events: TitleCase
+dotnet_naming_rule.public_fields_rule.symbols = public_fields
+dotnet_naming_rule.public_fields_rule.style = title_case_style
+dotnet_naming_rule.public_fields_rule.severity = suggestion
+
+# Private Fields: lowerCase
+dotnet_naming_rule.private_fields_rule.symbols = private_fields
+dotnet_naming_rule.private_fields_rule.style = lower_case_style
+dotnet_naming_rule.private_fields_rule.severity = suggestion
+
+# Methods: TitleCase
+dotnet_naming_rule.methods_rule.symbols = methods
+dotnet_naming_rule.methods_rule.style = title_case_style
+dotnet_naming_rule.methods_rule.severity = suggestion
+
+# Parameters: lowerCase
+dotnet_naming_rule.parameters_rule.symbols = parameters
+dotnet_naming_rule.parameters_rule.style = lower_case_style
+dotnet_naming_rule.parameters_rule.severity = suggestion
+
+# Constants: lowerCase
+dotnet_naming_rule.constants_rule.symbols = constants
+dotnet_naming_rule.constants_rule.style = lower_case_style
+dotnet_naming_rule.constants_rule.severity = suggestion
+
+#### SYMBOL STYLES ####
+dotnet_naming_style.title_case_style.capitalization = pascal_case
+dotnet_naming_style.lower_case_style.capitalization = camel_case
+
+#### SYMBOL GROUPS ####
+dotnet_naming_symbols.types.applicable_kinds = class, struct, enum
+dotnet_naming_symbols.public_fields.applicable_kinds = field
+dotnet_naming_symbols.public_fields.applicable_accessibilities = public
+
+dotnet_naming_symbols.private_fields.applicable_kinds = field
+dotnet_naming_symbols.private_fields.applicable_accessibilities = private, internal, protected
+
+dotnet_naming_symbols.methods.applicable_kinds = method
+dotnet_naming_symbols.constants.applicable_kinds = field
+dotnet_naming_symbols.constants.required_modifiers = const
+
+dotnet_naming_symbols.parameters.applicable_kinds = parameter
