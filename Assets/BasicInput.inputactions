@@ -12,13 +12,22 @@
                     "id": "3543051c-c5e5-48dc-92f3-22d394c8adb4",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": "Press(behavior=2)",
+                    "interactions": "Press(behavior=1)",
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Jump",
+                    "name": "JumpStarted",
                     "type": "Button",
                     "id": "06e7292c-9db3-4b5f-8435-6da96522c997",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "JumpFinished",
+                    "type": "Button",
+                    "id": "8f999609-ebba-4f11-89a4-0d08fc522ccf",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -94,12 +103,23 @@
                 },
                 {
                     "name": "",
-                    "id": "f29663b3-aaeb-4fb2-83f1-5170246ae3f2",
+                    "id": "4f47121d-bad9-4cdc-b5ae-91fb5789383e",
                     "path": "<Keyboard>/space",
-                    "interactions": "",
+                    "interactions": "Press",
                     "processors": "",
                     "groups": "",
-                    "action": "Jump",
+                    "action": "JumpStarted",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fb227381-8bc2-4790-aabe-6a7e34e17f88",
+                    "path": "<Keyboard>/space",
+                    "interactions": "Press(behavior=1)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "JumpFinished",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
