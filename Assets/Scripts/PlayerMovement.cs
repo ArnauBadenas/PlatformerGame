@@ -1,47 +1,47 @@
-using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerInput : MonoBehaviour
 {
-    Rigidbody2D rb2D;
-    [SerializeField] Animator animator;
+    private Rigidbody2D rb2D;
+    [SerializeField] private Animator animator;
 
-    float horizontalDirection;
-    [SerializeField] float speed = 5.0f;
+    private float horizontalDirection;
+    [SerializeField] private float speed = 5.0f;
 
-    bool facingRight = true;
+    private bool facingRight = true;
 
-    void Start()
+    private void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         Vector2 velocity = rb2D.linearVelocity;
         velocity.x = horizontalDirection * speed;
         rb2D.linearVelocity = velocity;
-        
+
         animator.SetFloat("Walk", Mathf.Abs(horizontalDirection));
 
         if (horizontalDirection > 0 && !facingRight)
         {
             FlipCharacter();
-        } else if (horizontalDirection < 0 && facingRight)
+        }
+        else if (horizontalDirection < 0 && facingRight)
         {
             FlipCharacter();
         }
     }
 
-    void OnMove(InputValue value)
+    private void OnMove(InputValue value)
     {
-        var input = value.Get<Vector2>();
+        Vector2 input = value.Get<Vector2>();
         horizontalDirection = input.x;
     }
 
-    void FlipCharacter()
+    private void FlipCharacter()
     {
         Vector3 currentScale = gameObject.transform.localScale;
         currentScale.x *= -1;
