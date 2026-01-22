@@ -5,10 +5,12 @@ using UnityEngine.InputSystem;
 public class PlayerInput : MonoBehaviour
 {
     private Rigidbody2D rb2D;
-    [SerializeField] private Animator animator;
+    [SerializeField]
+    private Animator animator;
 
     private float horizontalDirection;
-    [SerializeField] private float speed = 5.0f;
+    [SerializeField]
+    private float speed = 5.0f;
 
     private bool facingRight = true;
 
