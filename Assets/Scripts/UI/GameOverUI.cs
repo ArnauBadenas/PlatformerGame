@@ -7,15 +7,15 @@ namespace Assets.Scripts.UI
         [SerializeField] private GameObject gameOverPanel;
         private void OnEnable()
         {
-            PlayerLife.OnPlayerDeath += showGameOverPanel;
+            PlayerLife.OnPlayerDeath += ShowGameOverPanel;
         }
 
         private void OnDisable()
         {
-            PlayerLife.OnPlayerDeath -= showGameOverPanel;
+            PlayerLife.OnPlayerDeath -= ShowGameOverPanel;
         }
 
-        private void showGameOverPanel()
+        private void ShowGameOverPanel()
         {
             gameOverPanel.SetActive(true);
         }

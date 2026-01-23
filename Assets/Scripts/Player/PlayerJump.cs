@@ -17,12 +17,15 @@ public class PlayerJump : MonoBehaviour
     Rigidbody2D rb2D;
     private float jumpStartedTime;
     private float lastVelocityY;
-    private float jumpsCount = 0;
-    public float doubleJumpDelay;
-    public bool doubleJumpDone;
+
+    private float doubleJumpDelay;
+    private bool doubleJumpDone;
 
     bool isWallSliding => collisionDetection.IsTouchingFront();
     bool isGrounded => collisionDetection.IsGrounded();
+
+    public delegate void OnJumping();
+    public static event OnJumping OnJumpChange;
 
     void Start()
     {
@@ -41,6 +44,8 @@ public class PlayerJump : MonoBehaviour
         {
             SetWallSlide();
         }
+
+        Animator.SetBool("Jump", !isGrounded);
     }
 
     public void OnJumpStarted()
@@ -53,10 +58,10 @@ public class PlayerJump : MonoBehaviour
             rb2D.linearVelocity = velocity;
             jumpStartedTime = Time.time;
 
-            doubleJumpDelay = Time.time + 0.3f;
+            doubleJumpDelay = Time.time + 0.2f;
             doubleJumpDone = false;
 
-            Animator.SetBool("Jump", true);
+            OnJumpChange?.Invoke();
         }
 
         else if (!doubleJumpDone && Time.time > doubleJumpDelay)
@@ -65,7 +70,7 @@ public class PlayerJump : MonoBehaviour
             var velocity = new Vector2(rb2D.linearVelocity.x, GetJumpForce());
             rb2D.linearVelocity = velocity;
 
-            Animator.SetBool("Jump", true);
+            OnJumpChange?.Invoke();
         }
     }
 
@@ -73,8 +78,6 @@ public class PlayerJump : MonoBehaviour
     {
         float fractionOfTimePassed = 1 / Mathf.Clamp01((Time.time - jumpStartedTime) / PressTimeToMaxJump);
         rb2D.gravityScale *= fractionOfTimePassed;
-
-        Animator.SetBool("Jump", false);
     }
 
     private bool IsPeakReached()

@@ -149,7 +149,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: c2bf4d8ddf51ead47a7e4680eb21a80e, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -318,7 +318,7 @@ MonoBehaviour:
   PressTimeToMaxJump: 0.2
   DistanceToMaxHeight: 0.75
   SpeedHorizontal: 2
-  Animator: {fileID: 0}
+  Animator: {fileID: 9127166112046824626}
   WallSlideSpeed: 1
   filter:
     useTriggers: 0
@@ -334,8 +334,6 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  doubleJumpDelay: 0
-  doubleJumpDone: 0
 --- !u!1 &8661025222350839812
 GameObject:
   m_ObjectHideFlags: 0
