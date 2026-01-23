@@ -7,6 +7,9 @@ public class PlayerJump : MonoBehaviour
     public float DistanceToMaxHeight;
     public float SpeedHorizontal;
 
+    [SerializeField]
+    public Animator Animator;
+
     public float WallSlideSpeed = 1;
     public ContactFilter2D filter;
 
@@ -14,8 +17,12 @@ public class PlayerJump : MonoBehaviour
     Rigidbody2D rb2D;
     private float jumpStartedTime;
     private float lastVelocityY;
+    private float jumpsCount = 0;
+    public float doubleJumpDelay;
+    public bool doubleJumpDone;
 
     bool isWallSliding => collisionDetection.IsTouchingFront();
+    bool isGrounded => collisionDetection.IsGrounded();
 
     void Start()
     {
@@ -38,17 +45,36 @@ public class PlayerJump : MonoBehaviour
 
     public void OnJumpStarted()
     {
-        SetGravity();
+        if (isGrounded || isWallSliding)
+        {
+            SetGravity();
 
-        var velocity = new Vector2(rb2D.linearVelocity.x, GetJumpForce());
-        rb2D.linearVelocity = velocity;
-        jumpStartedTime = Time.time;
+            var velocity = new Vector2(rb2D.linearVelocity.x, GetJumpForce());
+            rb2D.linearVelocity = velocity;
+            jumpStartedTime = Time.time;
+
+            doubleJumpDelay = Time.time + 0.3f;
+            doubleJumpDone = false;
+
+            Animator.SetBool("Jump", true);
+        }
+
+        else if (!doubleJumpDone && Time.time > doubleJumpDelay)
+        {
+            doubleJumpDone = true;
+            var velocity = new Vector2(rb2D.linearVelocity.x, GetJumpForce());
+            rb2D.linearVelocity = velocity;
+
+            Animator.SetBool("Jump", true);
+        }
     }
 
     public void OnJumpFinished()
     {
         float fractionOfTimePassed = 1 / Mathf.Clamp01((Time.time - jumpStartedTime) / PressTimeToMaxJump);
         rb2D.gravityScale *= fractionOfTimePassed;
+
+        Animator.SetBool("Jump", false);
     }
 
     private bool IsPeakReached()
@@ -72,19 +98,11 @@ public class PlayerJump : MonoBehaviour
 
     private void ChangeGravity()
     {
-        rb2D.gravityScale *= 1.2f;
+        rb2D.gravityScale *= 1.1f;
     }
 
     private float GetJumpForce()
     {
         return 2 * JumpHeight * SpeedHorizontal / DistanceToMaxHeight;
-    }
-
-    private float GetDistanceToGround()
-    {
-        RaycastHit2D[] hit = new RaycastHit2D[3];
-        Physics2D.Raycast(transform.position, Vector2.down, filter, hit, 10);
-
-        return hit[0].distance;
     }
 }
