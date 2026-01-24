@@ -26,3 +26,10 @@ Kenney Assets:
 	• Twitter:	 twitter.com/KenneyNL
 	• BlueSky:	 kenney.bsky.social
 	• Instagram:	 instagram.com/kenney_nl
+
+    --------------------------------------
+Font name: Sterion
+Author name: Lettercorner Studio
+
+license: Creative Commons (by-nc) Attribution Non-commercial
+link: https://www.fontspace.com/sterion-font-f113971
