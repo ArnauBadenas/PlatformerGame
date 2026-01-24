@@ -302,6 +302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d1db90a7d100643b673af91960634d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerLife
+  Animator: {fileID: 9127166112046824626}
 --- !u!114 &7458312361811837833
 MonoBehaviour:
   m_ObjectHideFlags: 0

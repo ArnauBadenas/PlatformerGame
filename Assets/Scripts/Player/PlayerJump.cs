@@ -7,7 +7,6 @@ public class PlayerJump : MonoBehaviour
     public float DistanceToMaxHeight;
     public float SpeedHorizontal;
 
-    [SerializeField]
     public Animator Animator;
 
     public float WallSlideSpeed = 1;
