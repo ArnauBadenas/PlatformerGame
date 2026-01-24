@@ -2,11 +2,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class LogicManager : MonoBehaviour
+public class GameOverManager : MonoBehaviour
 {
     public GameObject GameOverScene;
-
-    [ContextMenu("AddScore")]
 
     public void RestartGame()
     {

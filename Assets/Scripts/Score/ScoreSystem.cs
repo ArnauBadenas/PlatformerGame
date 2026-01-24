@@ -18,6 +18,7 @@ public class ScoreSystem : MonoBehaviour
 
     private void UpdateScore(Coin coin)
     {
+        Debug.Log(coin.Value);
         Score += coin.Value;
         OnScoreUpdated?.Invoke(Score);
     }
