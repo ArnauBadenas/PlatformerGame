@@ -3,9 +3,9 @@ using UnityEngine;
 public class MusicManager : MonoBehaviour
 {
     [SerializeField]
-    AudioSource jumpSound;
+    private AudioSource jumpSound;
     [SerializeField]
-    AudioSource deathSound;
+    private AudioSource deathSound;
 
     private void OnEnable()
     {

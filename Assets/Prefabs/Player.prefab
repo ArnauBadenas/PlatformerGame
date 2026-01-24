@@ -47,8 +47,8 @@ GameObject:
   - component: {fileID: 3694336213034974945}
   - component: {fileID: 8458678695640505415}
   - component: {fileID: 8525391448395304947}
-  - component: {fileID: 8914743546520874534}
   - component: {fileID: 7458312361811837833}
+  - component: {fileID: 8914743546520874534}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -285,24 +285,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a97baf21aa33db45ba38e270531aa53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollisionDetection
-  GroundLayer:
+  groundLayer:
     serializedVersion: 2
     m_Bits: 256
-  GroundCheckPoint: {fileID: 8889840856706546023}
-  FrontCheckPoint: {fileID: 4309608935710850081}
---- !u!114 &8914743546520874534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4346237471315782422}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9d1db90a7d100643b673af91960634d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerLife
-  Animator: {fileID: 9127166112046824626}
+  groundCheckPoint: {fileID: 8889840856706546023}
+  frontCheckPoint: {fileID: 4309608935710850081}
 --- !u!114 &7458312361811837833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -335,6 +322,19 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
+--- !u!114 &8914743546520874534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4346237471315782422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9d1db90a7d100643b673af91960634d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerLife
+  Animator: {fileID: 9127166112046824626}
 --- !u!1 &8661025222350839812
 GameObject:
   m_ObjectHideFlags: 0

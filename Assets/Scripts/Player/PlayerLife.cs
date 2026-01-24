@@ -2,7 +2,6 @@ using System;
 using UnityEngine;
 public class PlayerLife : MonoBehaviour,IKillable
 {
-
     public static event Action OnPlayerDeath;
     public Animator Animator;
 
@@ -13,11 +12,7 @@ public class PlayerLife : MonoBehaviour,IKillable
 
     public void Die()
     {
-        //TODO death animation
-
         Animator.SetBool("Death", true);
-        OnPlayerDeath?.Invoke(); //Game over screen
+        OnPlayerDeath?.Invoke(); //Invoke game over screen
     }
-
-
 }

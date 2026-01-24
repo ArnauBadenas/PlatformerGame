@@ -3,15 +3,15 @@ using UnityEngine;
 public class CollisionDetection : MonoBehaviour
 {
     [SerializeField]
-    private LayerMask GroundLayer;
+    private LayerMask groundLayer;
 
     [SerializeField]
-    private Transform GroundCheckPoint;
+    private Transform groundCheckPoint;
     [SerializeField]
-    private Transform FrontCheckPoint;
+    private Transform frontCheckPoint;
 
-    private float checkRadius = 0.15f;
-
+    private const float checkRadius = 0.15f;
+    
     private bool isGrounded;
     private bool isTouchingFront;
 
@@ -28,13 +28,13 @@ public class CollisionDetection : MonoBehaviour
 
     private void CheckGrounded()
     {
-        var colliders = Physics2D.OverlapCircleAll(GroundCheckPoint.position, checkRadius, GroundLayer);
+        var colliders = Physics2D.OverlapCircleAll(groundCheckPoint.position, checkRadius, groundLayer);
         isGrounded = (colliders.Length > 0);
     }
 
     private void CheckFront()
     {
-        var colliders = Physics2D.OverlapCircleAll(FrontCheckPoint.position, checkRadius, GroundLayer);
+        var colliders = Physics2D.OverlapCircleAll(frontCheckPoint.position, checkRadius, groundLayer);
         isTouchingFront = (colliders.Length > 0);
     }
 

@@ -3,22 +3,21 @@ using UnityEngine.InputSystem;
 
 public class QuitGame : MonoBehaviour
 {
-
-  public void Update()
+    public void Update()
     {
-        if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
+        if ((Keyboard.current != null) && Keyboard.current.escapeKey.wasPressedThisFrame)
         {
             Quit();
         }
     }
 
-  public void Quit()
+    public void Quit()
     {
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-#else
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #else
             Application.Quit();
-#endif
+        #endif
     }
 
 }

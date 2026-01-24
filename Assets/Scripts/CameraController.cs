@@ -3,9 +3,8 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     Vector3 target;
-    public PlayerInput player;
     [SerializeField]
-    private float speed = 5.0f;
+    private PlayerInput player;
 
     void Start()
     {
@@ -16,11 +15,6 @@ public class CameraController : MonoBehaviour
     {
         target.x = player.transform.position.x;
         target.y = player.transform.position.y;
-
-        if (target.x < 0)
-        {
-            target.y = 0;
-        }
 
         transform.position = target;
     }

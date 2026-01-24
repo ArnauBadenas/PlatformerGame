@@ -114,8 +114,30 @@
                 },
                 {
                     "name": "",
+                    "id": "852a158b-dd01-4710-bf64-fa417b69dd8b",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "JumpStarted",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "fb227381-8bc2-4790-aabe-6a7e34e17f88",
                     "path": "<Keyboard>/space",
+                    "interactions": "Press(behavior=1)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "JumpFinished",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2e69aacb-149b-47d0-8ce7-22b8ec3a10f4",
+                    "path": "<Keyboard>/upArrow",
                     "interactions": "Press(behavior=1)",
                     "processors": "",
                     "groups": "",

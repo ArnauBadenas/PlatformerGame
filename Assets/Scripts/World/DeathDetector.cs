@@ -10,4 +10,3 @@ public class DeathDetector : MonoBehaviour
         killable?.Die();
     }
 }
-

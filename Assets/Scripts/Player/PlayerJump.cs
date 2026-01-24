@@ -6,14 +6,13 @@ public class PlayerJump : MonoBehaviour
     public float PressTimeToMaxJump;
     public float DistanceToMaxHeight;
     public float SpeedHorizontal;
+    public float WallSlideSpeed;
 
     public Animator Animator;
 
-    public float WallSlideSpeed = 1;
-    public ContactFilter2D filter;
+    private CollisionDetection collisionDetection;
+    private Rigidbody2D rb2D;
 
-    CollisionDetection collisionDetection;
-    Rigidbody2D rb2D;
     private float jumpStartedTime;
     private float lastVelocityY;
 
@@ -32,7 +31,7 @@ public class PlayerJump : MonoBehaviour
         collisionDetection = GetComponent<CollisionDetection>();
     }
 
-    private void FixedUpdate()
+    void FixedUpdate()
     {
         if (IsPeakReached())
         {
@@ -52,9 +51,8 @@ public class PlayerJump : MonoBehaviour
         if (isGrounded || isWallSliding)
         {
             SetGravity();
+            Jump();
 
-            var velocity = new Vector2(rb2D.linearVelocity.x, GetJumpForce());
-            rb2D.linearVelocity = velocity;
             jumpStartedTime = Time.time;
 
             doubleJumpDelay = Time.time + 0.2f;
@@ -63,20 +61,24 @@ public class PlayerJump : MonoBehaviour
             OnJumpChange?.Invoke();
         }
 
-        else if (!doubleJumpDone && Time.time > doubleJumpDelay)
+        else if (!doubleJumpDone && (Time.time > doubleJumpDelay))
         {
             doubleJumpDone = true;
-            var velocity = new Vector2(rb2D.linearVelocity.x, GetJumpForce());
-            rb2D.linearVelocity = velocity;
+            Jump();
 
             OnJumpChange?.Invoke();
         }
     }
-
     public void OnJumpFinished()
     {
         float fractionOfTimePassed = 1 / Mathf.Clamp01((Time.time - jumpStartedTime) / PressTimeToMaxJump);
         rb2D.gravityScale *= fractionOfTimePassed;
+    }
+
+    private void Jump()
+    {
+        var velocity = new Vector2(rb2D.linearVelocity.x, GetJumpForce());
+        rb2D.linearVelocity = velocity;
     }
 
     private bool IsPeakReached()

@@ -4,13 +4,15 @@ namespace Assets.Scripts.UI
 {
     public class GameOverUI : MonoBehaviour
     {
-        [SerializeField] private GameObject gameOverPanel;
-        private void OnEnable()
+        [SerializeField]
+        private GameObject gameOverPanel;
+
+        void OnEnable()
         {
             PlayerLife.OnPlayerDeath += ShowGameOverPanel;
         }
 
-        private void OnDisable()
+        void OnDisable()
         {
             PlayerLife.OnPlayerDeath -= ShowGameOverPanel;
         }
