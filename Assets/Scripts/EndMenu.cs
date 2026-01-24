@@ -8,10 +8,4 @@ public class EndMenu : MonoBehaviour
         SceneManager.LoadSceneAsync("Gameplay");
     }
 
-    public void QuitGame()
-    {
-        Application.Quit();
-    }
-
-
 }
