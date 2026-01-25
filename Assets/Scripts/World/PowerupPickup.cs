@@ -21,7 +21,6 @@ public class PowerupPickup : MonoBehaviour
     private IEnumerator ApplyAndRemove(GameObject target) //Ienumerator para usar corrutina
     {
         effect.Apply(target);
-        Debug.Log(effect.duration);
         yield return new WaitForSeconds(effect.duration);
         effect.Remove(target);
     }
