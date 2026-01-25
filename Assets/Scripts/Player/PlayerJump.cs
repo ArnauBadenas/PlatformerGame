@@ -19,19 +19,19 @@ public class PlayerJump : MonoBehaviour
     private float doubleJumpDelay;
     private bool doubleJumpDone;
 
-    bool isWallSliding => collisionDetection.IsTouchingFront();
-    bool isGrounded => collisionDetection.IsGrounded();
+    private bool isWallSliding => collisionDetection.IsTouchingFront();
+    private bool isGrounded => collisionDetection.IsGrounded();
 
     public delegate void OnJumping();
     public static event OnJumping OnJumpChange;
 
-    void Start()
+    private void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
         collisionDetection = GetComponent<CollisionDetection>();
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         if (IsPeakReached())
         {
@@ -77,13 +77,13 @@ public class PlayerJump : MonoBehaviour
 
     private void Jump()
     {
-        var velocity = new Vector2(rb2D.linearVelocity.x, GetJumpForce());
+        Vector2 velocity = new(rb2D.linearVelocity.x, GetJumpForce());
         rb2D.linearVelocity = velocity;
     }
 
     private bool IsPeakReached()
     {
-        bool reached = ((lastVelocityY * rb2D.linearVelocity.y) < 0);
+        bool reached = (lastVelocityY * rb2D.linearVelocity.y) < 0;
         lastVelocityY = rb2D.linearVelocity.y;
 
         return reached;
@@ -96,7 +96,7 @@ public class PlayerJump : MonoBehaviour
 
     private void SetGravity()
     {
-        var gravity = 2 * JumpHeight * (SpeedHorizontal * SpeedHorizontal) / (DistanceToMaxHeight * DistanceToMaxHeight);
+        float gravity = 2 * JumpHeight * (SpeedHorizontal * SpeedHorizontal) / (DistanceToMaxHeight * DistanceToMaxHeight);
         rb2D.gravityScale = gravity / 9.81f;
     }
 
