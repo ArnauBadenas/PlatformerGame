@@ -12,14 +12,12 @@ public class MusicManager : MonoBehaviour
     private void OnEnable()
     {
         PlayerJump.OnJumpChange += SetJumpEffect;
-        PlayerLife.OnPlayerDeath += SetDeathEffect;
         Coin.OnCoinCollected += SetCoinEffect;
     }
 
     private void OnDisable()
     {
         PlayerJump.OnJumpChange -= SetJumpEffect;
-        PlayerLife.OnPlayerDeath -= SetDeathEffect;
         Coin.OnCoinCollected -= SetCoinEffect;
     }
 

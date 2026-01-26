@@ -189,7 +189,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'MISSION Ended
+  m_Text: 'MISSION ENDED
 
 '
 --- !u!222 &242142349
@@ -952,7 +952,6 @@ GameObject:
   - component: {fileID: 1542837349}
   - component: {fileID: 1542837348}
   - component: {fileID: 1542837347}
-  - component: {fileID: 1542837350}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1034,18 +1033,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1542837350
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1542837346}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46a62b0f6d9d4d74a87b82599f70e15c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
 --- !u!1 &1829734667
 GameObject:
   m_ObjectHideFlags: 0
