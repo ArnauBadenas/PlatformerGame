@@ -13,6 +13,5 @@ public class PlayerLife : MonoBehaviour,IKillable
     public void Die()
     {
         Animator.SetBool("Death", true);
-        OnPlayerDeath?.Invoke(); //Invoke game over screen
     }
 }

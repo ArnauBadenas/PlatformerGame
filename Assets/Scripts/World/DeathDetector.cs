@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DeathDetector : MonoBehaviour
 {
@@ -6,5 +7,7 @@ public class DeathDetector : MonoBehaviour
     {
         IKillable killable = collision.GetComponent<IKillable>();
         killable?.Die();
+        FinishGame.OnDeathEvent?.Invoke();
+        SceneManager.LoadScene("Ending");
     }
 }

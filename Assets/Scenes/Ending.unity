@@ -189,7 +189,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'MISSION COMPLETED
+  m_Text: 'MISSION Ended
 
 '
 --- !u!222 &242142349

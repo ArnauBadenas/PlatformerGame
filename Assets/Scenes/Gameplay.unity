@@ -303,7 +303,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 231349541}
+      objectReference: {fileID: 0}
     - target: {fileID: 8634731490922478806, guid: 172e988aa81279d45859c4ca9dd0df43,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -315,32 +315,11 @@ PrefabInstance:
       value: ResetGame, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8826692634788253355, guid: 172e988aa81279d45859c4ca9dd0df43, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 353710479955922256, guid: 172e988aa81279d45859c4ca9dd0df43,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 231349541}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 172e988aa81279d45859c4ca9dd0df43, type: 3}
---- !u!1 &231349539 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 353710479955922256, guid: 172e988aa81279d45859c4ca9dd0df43,
-    type: 3}
-  m_PrefabInstance: {fileID: 224951616}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &231349541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 231349539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45f9ab21db5d4904997763f69a4f5851, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ResetGame
 --- !u!114 &241160521 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3694336213034974945, guid: c3ae3433c48ec6b47b41386e59de34f6,
@@ -1229,12 +1208,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1690714855455400368, guid: eb92a600d30246f41bfd7cb2378c9699,
     type: 3}
   m_PrefabInstance: {fileID: 677800233}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &703541995 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8826692634788253355, guid: 172e988aa81279d45859c4ca9dd0df43,
-    type: 3}
-  m_PrefabInstance: {fileID: 224951616}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &757098643
 PrefabInstance:
@@ -2648,7 +2621,7 @@ PrefabInstance:
         type: 3}
       propertyPath: GameOverScene
       value: 
-      objectReference: {fileID: 703541995}
+      objectReference: {fileID: 0}
     - target: {fileID: 8563822039766986623, guid: 53e4fa8eb544aef4ebddeb7937a67676,
         type: 3}
       propertyPath: m_Name
