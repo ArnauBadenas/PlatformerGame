@@ -3,13 +3,12 @@ using UnityEngine.InputSystem;
 
 public class PlayerInput : MonoBehaviour
 {
+    public Animator Animator;
     private Rigidbody2D rigid2d;
-    [SerializeField]
-    private Animator animator;
 
-    private float horizontalDirection;
     [SerializeField]
     private float speed = 5.0f;
+    private float horizontalDirection;
 
     private bool facingRight = true;
 
@@ -24,7 +23,7 @@ public class PlayerInput : MonoBehaviour
         velocity.x = horizontalDirection * speed;
         rigid2d.linearVelocity = velocity;
 
-        animator.SetFloat("Walk", Mathf.Abs(horizontalDirection));
+        Animator.SetFloat("Walk", Mathf.Abs(horizontalDirection));
 
         if ((horizontalDirection > 0) && !facingRight)
         {

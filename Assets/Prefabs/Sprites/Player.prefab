@@ -271,7 +271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab12ce0cb52f5e748aafedf8ea8115e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInput
-  animator: {fileID: 9127166112046824626}
+  Animator: {fileID: 9127166112046824626}
   speed: 5
 --- !u!114 &8525391448395304947
 MonoBehaviour:
@@ -320,7 +320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f013ba1db98d85142b160fa294135e03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  Animator: {fileID: 0}
+  Animator: {fileID: 9127166112046824626}
 --- !u!1 &8661025222350839812
 GameObject:
   m_ObjectHideFlags: 0

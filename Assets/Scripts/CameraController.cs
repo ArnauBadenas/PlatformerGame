@@ -3,6 +3,7 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     Vector3 target;
+
     [SerializeField]
     private PlayerInput player;
 

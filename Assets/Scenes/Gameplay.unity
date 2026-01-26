@@ -162,12 +162,12 @@ PrefabInstance:
     - target: {fileID: 338409793479793143, guid: 172e988aa81279d45859c4ca9dd0df43,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -634
+      value: -559
       objectReference: {fileID: 0}
     - target: {fileID: 338409793479793143, guid: 172e988aa81279d45859c4ca9dd0df43,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 452
+      value: 468
       objectReference: {fileID: 0}
     - target: {fileID: 338409793479793143, guid: 172e988aa81279d45859c4ca9dd0df43,
         type: 3}
@@ -277,7 +277,7 @@ PrefabInstance:
     - target: {fileID: 7989831820305534661, guid: 172e988aa81279d45859c4ca9dd0df43,
         type: 3}
       propertyPath: m_Name
-      value: 'Canvas '
+      value: 'ScoreCanvas '
       objectReference: {fileID: 0}
     - target: {fileID: 8099659509515031922, guid: 172e988aa81279d45859c4ca9dd0df43,
         type: 3}
@@ -2484,7 +2484,7 @@ PrefabInstance:
     - target: {fileID: 4982168151340635617, guid: c3ae3433c48ec6b47b41386e59de34f6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.43
+      value: 0.73
       objectReference: {fileID: 0}
     - target: {fileID: 4982168151340635617, guid: c3ae3433c48ec6b47b41386e59de34f6,
         type: 3}
