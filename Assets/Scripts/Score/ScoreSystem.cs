@@ -12,12 +12,14 @@ public class ScoreSystem : MonoBehaviour
     {
         Coin.OnCoinCollected += UpdateScore;
         FinishGame.OnDeathEvent += WriteFinalScore;
+        FinishGame.OnFinishedEvent += WriteFinalScore;
     }
 
     public void OnDisable()
     {
         Coin.OnCoinCollected -= UpdateScore;
         FinishGame.OnDeathEvent -= WriteFinalScore;
+        FinishGame.OnFinishedEvent -= WriteFinalScore;
     }
 
     private void UpdateScore(Coin coin)

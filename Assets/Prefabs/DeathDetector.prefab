@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4996504056401776003}
   - component: {fileID: 1536065506923772601}
-  - component: {fileID: 6336294946082490757}
+  - component: {fileID: 2839297599113026083}
   m_Layer: 0
   m_Name: DeathDetector
-  m_TagString: Untagged
+  m_TagString: DeathDetector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79,7 +79,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 67.26651, y: 1}
   m_EdgeRadius: 0
---- !u!114 &6336294946082490757
+--- !u!114 &2839297599113026083
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -88,6 +88,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 5221005720613924780}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f68d4b282d3cc9041aafa7791e136689, type: 3}
+  m_Script: {fileID: 11500000, guid: 43f3162c784832743baa55ac5ff785ff, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DeathDetector
+  m_EditorClassIdentifier: Assembly-CSharp::FinishGame

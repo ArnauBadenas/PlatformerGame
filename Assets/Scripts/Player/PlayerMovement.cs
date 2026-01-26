@@ -30,7 +30,7 @@ public class PlayerInput : MonoBehaviour
         {
             FlipCharacter();
         }
-        else if ((horizontalDirection) < 0 && facingRight)
+        else if ((horizontalDirection < 0) && facingRight)
         {
             FlipCharacter();
         }
