@@ -146,34 +146,6 @@
                     "isPartOfComposite": false
                 }
             ]
-        },
-        {
-            "name": "UI",
-            "id": "859790c2-e08b-4e07-b02e-cf592191654f",
-            "actions": [
-                {
-                    "name": "ScrollWheel",
-                    "type": "Value",
-                    "id": "d755fe1d-aefc-4ddc-8289-62cf41fec8c8",
-                    "expectedControlType": "Axis",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "",
-                    "id": "41736580-bca9-4841-9b0a-32c3e534fb08",
-                    "path": "<Mouse>/middleButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "ScrollWheel",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                }
-            ]
         }
     ],
     "controlSchemes": []
