@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: JumpBoost
   m_EditorClassIdentifier: Assembly-CSharp::JumpBoost
   Duration: 4
-  JumpMultiplier: 1.2
+  JumpMultiplier: 1.5

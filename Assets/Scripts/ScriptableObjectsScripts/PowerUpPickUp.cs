@@ -14,14 +14,12 @@ public class PowerUpPickUp : MonoBehaviour
             _ = player.StartCoroutine(ApplyAndRemove(collision.gameObject));
             gameObject.SetActive(false);
         }
-
     }
 
-    private IEnumerator ApplyAndRemove(GameObject target) //Ienumerator para usar corrutina
+    private IEnumerator ApplyAndRemove(GameObject target)
     {
         effect.Apply(target);
         yield return new WaitForSeconds(effect.Duration);
         effect.Remove(target);
     }
 }
-

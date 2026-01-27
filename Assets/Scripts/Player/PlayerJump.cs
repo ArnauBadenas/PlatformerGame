@@ -57,18 +57,15 @@ public class PlayerJump : MonoBehaviour
 
             doubleJumpDelay = Time.time + 0.2f;
             doubleJumpDone = false;
-
-            OnJumpChange?.Invoke();
         }
 
         else if (!doubleJumpDone && (Time.time > doubleJumpDelay))
         {
             doubleJumpDone = true;
             Jump();
-
-            OnJumpChange?.Invoke();
         }
     }
+
     public void OnJumpFinished()
     {
         float fractionOfTimePassed = 1 / Mathf.Clamp01((Time.time - jumpStartedTime) / PressTimeToMaxJump);
@@ -79,6 +76,8 @@ public class PlayerJump : MonoBehaviour
     {
         Vector2 velocity = new(rb2D.linearVelocity.x, GetJumpForce());
         rb2D.linearVelocity = velocity;
+
+        OnJumpChange?.Invoke();
     }
 
     private bool IsPeakReached()

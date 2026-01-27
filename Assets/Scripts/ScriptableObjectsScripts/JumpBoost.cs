@@ -4,6 +4,7 @@ using UnityEngine;
 public class JumpBoost : PowerUp
 {
     public float JumpMultiplier = 1.5f;
+
     public override void Apply(GameObject target)
     {
         if (target.TryGetComponent<PlayerJump>(out PlayerJump jumpScript))

@@ -13,7 +13,8 @@ public class FinishGame : MonoBehaviour
         if (gameObject.CompareTag("Spike") || gameObject.CompareTag("DeathDetector"))
         {
             StartCoroutine(BreakBetweenScenes());
-        } else
+        }
+        else
         {
             OnFinishedEvent?.Invoke();
             ChangeScene();
