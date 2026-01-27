@@ -1,3 +1,8 @@
+
+    PlatformerGame  © 2026 by Alexia Lambros, Carla Pallés, Arnau Badenas is licensed under CC BY-NC-SA 4.0.
+    To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+-----------------------------------------------------------------------------------------------------
 Map and sound effects: Kenney Assets
 
 	New Platformer Pack (1.1)
