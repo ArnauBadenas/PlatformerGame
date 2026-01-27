@@ -1,44 +1,33 @@
-## Delivery 01 - $(Game Title)
-
-![$(Game Title)](Screenshots/screenshot01.png "$(Game Title)")
+## Delivery 01 - PlatformerGame
 
 ### Description
-
-$(Your Game Description)
+A 2D platformer where the player collects coins, uses powerups, and navigates obstacles to reach the end of each level.
 
 ### Features
-
- - $(Game Feature 01)
- - $(Game Feature 02)
- - $(Game Feature 03)
+ - Jumping
+ - Powerups
+ - Coins
 
 ### Controls
-
-Keyboard:
- - $(Game Control 01)
- - $(Game Control 02)
- - $(Game Control 03)
+#### Keyboard
+- Move: WASD  
+- Jump: Space  
+- Quit: Esc
 
 ### Screenshots
+![GameStart](./Screenshots/Init.gif)
 
-_TODO: Show your game to the world, animated GIFs recommended!._
 
 ### Developers
 
- - $(Developer 01) - $(Role/Tasks Developed)
- - $(Developer 02) - $(Role/Tasks Developed)
- - $(Developer 03) - $(Role/Tasks Developed)
+ - Alexia Lambros - Programmer, Animator
+ - Arnau Badenas - Programmer
+ - Carla Pallés - Programmer, Designer
 
-### Links
-
- - YouTube Gameplay: $(YouTube Link)
- - itch.io Release: $(itch.io Game Page)
- - Steam Release: $(Steam Game Page)
 
 ### License
 
-This game sources are licensed under MIT license. Check [LICENSE](LICENSE) for further details.
+This project is distributed under multiple licenses depending on the type of content (source code, art, and other assets).  
+See [LICENSE](Assets/LICENSES.txt) for full details.
 
-$(Additional Licenses)
-
-*Copyright (c) $(Year) $(Developers Names)*
+*PlatformerGame © 2026 by Alexia Lambros, Carla Pallés, Arnau Badenas is licensed under CC BY-NC-SA 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/*
