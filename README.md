@@ -5,13 +5,14 @@ A 2D platformer where the player collects coins, uses powerups, and navigates ob
 
 ### Features
  - Jumping
- - Powerups
+ - Power Ups
  - Coins
 
 ### Controls
 #### Keyboard
-- Move: WASD  
-- Jump: Space  
+- Move: WASD and arrows
+- Jump: Space and up arrow
+- Start: Enter
 - Quit: Esc
 
 ### Screenshots
@@ -20,14 +21,15 @@ A 2D platformer where the player collects coins, uses powerups, and navigates ob
 
 ### Developers
 
- - Alexia Lambros - Programmer, Animator
+ - Alexia Martínez - Programmer, Animator
  - Arnau Badenas - Programmer
  - Carla Pallés - Programmer, Designer
 
 
 ### License
 
-This project is distributed under multiple licenses depending on the type of content (source code, art, and other assets).  
-See [LICENSE](Assets/LICENSES.txt) for full details.
+This game sources are licensed under MIT license. Check [LICENSE](LICENSE) for further details.
 
-*PlatformerGame © 2026 by Alexia Lambros, Carla Pallés, Arnau Badenas is licensed under CC BY-NC-SA 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/*
+For additional licenses (art and music) see [LICENSE](Assets/LICENSES.txt).
+
+PlatformerGame © 2026 by Alexia Martínez, Carla Pallés, Arnau Badenas

@@ -1,4 +1,3 @@
-
 -----------------------------------------------------------------------------------------------------
 Map and sound effects: Kenney Assets
 
@@ -6,7 +5,7 @@ Map and sound effects: Kenney Assets
 
 	Created/distributed by Kenney (www.kenney.nl)
 	Creation date: 03-12-2025
-	
+
 			------------------------------
 
 	License: (Creative Commons Zero, CC0)
@@ -22,7 +21,7 @@ Map and sound effects: Kenney Assets
 	• Donate  : www.kenney.nl/donate
 
 	• Patreon : patreon.com/kenney
-	
+
 	Follow on social media for updates:
 
 	• Twitter:	 twitter.com/KenneyNL
