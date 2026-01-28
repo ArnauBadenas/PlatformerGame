@@ -2453,12 +2453,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5546186894626803018, guid: c3ae3433c48ec6b47b41386e59de34f6,
         type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 8999641318087435158, guid: 5e369895d1f64a8478e9932509352b6d,
-        type: 3}
-    - target: {fileID: 5546186894626803018, guid: c3ae3433c48ec6b47b41386e59de34f6,
-        type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
@@ -2472,6 +2466,16 @@ PrefabInstance:
       propertyPath: GroundCheckPoint
       value: 
       objectReference: {fileID: 244825326}
+    - target: {fileID: 9037178488316674318, guid: c3ae3433c48ec6b47b41386e59de34f6,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 0.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 9037178488316674318, guid: c3ae3433c48ec6b47b41386e59de34f6,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 0.97
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
