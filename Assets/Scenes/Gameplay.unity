@@ -279,31 +279,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'ScoreCanvas '
       objectReference: {fileID: 0}
-    - target: {fileID: 8099659509515031922, guid: 172e988aa81279d45859c4ca9dd0df43,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.6150943
-      objectReference: {fileID: 0}
-    - target: {fileID: 8099659509515031922, guid: 172e988aa81279d45859c4ca9dd0df43,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8099659509515031922, guid: 172e988aa81279d45859c4ca9dd0df43,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.3052116
-      objectReference: {fileID: 0}
-    - target: {fileID: 8099659509515031922, guid: 172e988aa81279d45859c4ca9dd0df43,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    - target: {fileID: 8099659509515031922, guid: 172e988aa81279d45859c4ca9dd0df43,
-        type: 3}
-      propertyPath: m_FontData.m_Alignment
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 8634731490922478806, guid: 172e988aa81279d45859c4ca9dd0df43,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
