@@ -31,8 +31,8 @@ Map and sound effects: Kenney Assets
 Font name: Sterion
 Author name: Lettercorner Studio
 
-license: Creative Commons (by-nc) Attribution Non-commercial
-link: https://www.fontspace.com/sterion-font-f113971
+License: Creative Commons (by-nc) Attribution Non-commercial
+Link: https://www.fontspace.com/sterion-font-f113971
 -----------------------------------------------------------------------------------------------------------
 Background: Craftpix.net
 
