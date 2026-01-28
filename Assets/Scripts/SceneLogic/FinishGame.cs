@@ -14,6 +14,7 @@ public class FinishGame : MonoBehaviour
         {
             StartCoroutine(BreakBetweenScenes());
         }
+
         else
         {
             OnFinishedEvent?.Invoke();
