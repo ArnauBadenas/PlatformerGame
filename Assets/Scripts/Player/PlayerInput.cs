@@ -25,8 +25,8 @@ public class PlayerInput : MonoBehaviour
 
         Animator.SetFloat("Walk", Mathf.Abs(horizontalDirection));
 
-        if (((horizontalDirection > 0) && !facingRight) ||
-            ((horizontalDirection < 0) && facingRight)) FlipCharacter();
+        if ((horizontalDirection > 0) && !facingRight ||
+            (horizontalDirection < 0) && facingRight) FlipCharacter();
     }
 
     private void OnMove(InputValue value)

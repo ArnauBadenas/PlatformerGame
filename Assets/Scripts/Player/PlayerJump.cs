@@ -82,7 +82,7 @@ public class PlayerJump : MonoBehaviour
 
     private bool IsPeakReached()
     {
-        bool reached = (lastVelocityY * rb2D.linearVelocity.y) < 0;
+        bool reached = ((lastVelocityY * rb2D.linearVelocity.y) < 0);
         lastVelocityY = rb2D.linearVelocity.y;
 
         return reached;
