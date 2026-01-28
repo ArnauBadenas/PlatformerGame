@@ -6,7 +6,7 @@ public class ScoreSystem : MonoBehaviour
     public int Score = 0;
     public static int FinalScore = 0;
 
-    public static Action<int> OnScoreUpdated;
+    public static event Action<int> OnScoreUpdated;
 
     public void OnEnable()
     {

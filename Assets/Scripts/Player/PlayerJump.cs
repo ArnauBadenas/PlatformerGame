@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerJump : MonoBehaviour
@@ -22,8 +23,7 @@ public class PlayerJump : MonoBehaviour
     private bool isWallSliding => collisionDetection.IsTouchingFront();
     private bool isGrounded => collisionDetection.IsGrounded();
 
-    public delegate void OnJumping();
-    public static event OnJumping OnJumpChange;
+    public static event Action OnJumpChange;
 
     private void Start()
     {
@@ -101,7 +101,7 @@ public class PlayerJump : MonoBehaviour
 
     private void ChangeGravity()
     {
-        rb2D.gravityScale *= 1.1f;
+        rb2D.gravityScale *= 1.15f;
     }
 
     private float GetJumpForce()

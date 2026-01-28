@@ -13,5 +13,4 @@ public class PowerUpPickUp : MonoBehaviour
             gameObject.SetActive(false);
         }
     }
-
 }

@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class FinishGame : MonoBehaviour
 {
-    public static Action OnDeathEvent;
-    public static Action OnFinishedEvent;
+    public static event Action OnDeathEvent; // Action for the player dying before they reach the end
+    public static event Action OnFinishedEvent; // Action for the player finishing the game
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
