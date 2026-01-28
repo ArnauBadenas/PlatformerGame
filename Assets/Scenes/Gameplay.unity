@@ -142,7 +142,12 @@ PrefabInstance:
     - target: {fileID: 338409793479793143, guid: 172e988aa81279d45859c4ca9dd0df43,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 269.12
+      value: 157.9744
+      objectReference: {fileID: 0}
+    - target: {fileID: 338409793479793143, guid: 172e988aa81279d45859c4ca9dd0df43,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 37.6404
       objectReference: {fileID: 0}
     - target: {fileID: 338409793479793143, guid: 172e988aa81279d45859c4ca9dd0df43,
         type: 3}
@@ -162,17 +167,37 @@ PrefabInstance:
     - target: {fileID: 338409793479793143, guid: 172e988aa81279d45859c4ca9dd0df43,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -559
+      value: -164.40205
       objectReference: {fileID: 0}
     - target: {fileID: 338409793479793143, guid: 172e988aa81279d45859c4ca9dd0df43,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 468
+      value: 135.46132
       objectReference: {fileID: 0}
     - target: {fileID: 338409793479793143, guid: 172e988aa81279d45859c4ca9dd0df43,
         type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1178675525708991250, guid: 172e988aa81279d45859c4ca9dd0df43,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 63.3867
+      objectReference: {fileID: 0}
+    - target: {fileID: 1178675525708991250, guid: 172e988aa81279d45859c4ca9dd0df43,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 61.8611
+      objectReference: {fileID: 0}
+    - target: {fileID: 1178675525708991250, guid: 172e988aa81279d45859c4ca9dd0df43,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -352.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 1178675525708991250, guid: 172e988aa81279d45859c4ca9dd0df43,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 137.4
       objectReference: {fileID: 0}
     - target: {fileID: 2468708311490733534, guid: 172e988aa81279d45859c4ca9dd0df43,
         type: 3}
@@ -278,6 +303,22 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: 'ScoreCanvas '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8099659509515031922, guid: 172e988aa81279d45859c4ca9dd0df43,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: d8285c1b34c189b4c92570b98acdf862,
+        type: 3}
+    - target: {fileID: 8099659509515031922, guid: 172e988aa81279d45859c4ca9dd0df43,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 8099659509515031922, guid: 172e988aa81279d45859c4ca9dd0df43,
+        type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8634731490922478806, guid: 172e988aa81279d45859c4ca9dd0df43,
         type: 3}
