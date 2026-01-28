@@ -5,6 +5,6 @@ public class ResetGame : MonoBehaviour
 {
     public void ResetGameToGameplay()
     {
-        SceneManager.LoadSceneAsync("Gameplay");
+        SceneManager.LoadScene("Gameplay");
     }
 }

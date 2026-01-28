@@ -8,6 +8,6 @@ public class ShowFinalScore : MonoBehaviour
     private void Awake()
     {
         labelFinalScore = GetComponent<Text>();
-        labelFinalScore.text = "Final score: " + ScoreSystem.FinalScore;
+        labelFinalScore.text = "FINAL SCORE: " + ScoreSystem.FinalScore;
     }
 }

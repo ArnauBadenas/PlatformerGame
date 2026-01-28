@@ -3,8 +3,8 @@ guid: c8fe31ef1bbc38049be20b644c612c17
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1786331750496382236
-    second: coin_bronze_0
+      213: 497027269284114030
+    second: CoinBronze_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -48,7 +48,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: coin_bronze_0
+      name: CoinBronze_0
       rect:
         serializedVersion: 2
         x: 12
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c1da65f33435ac810800000000000000
-      internalID: 1786331750496382236
+      spriteID: e6eac550babc5e600800000000000000
+      internalID: 497027269284114030
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      coin_bronze_0: 1786331750496382236
+      CoinBronze_0: 497027269284114030
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Powerups/Jump Boost")]
+[CreateAssetMenu(menuName = "Power Ups/Jump Boost")]
 public class JumpBoost : PowerUp
 {
     public float JumpMultiplier = 1.5f;
@@ -10,14 +10,6 @@ public class JumpBoost : PowerUp
         if (target.TryGetComponent<PlayerJump>(out PlayerJump jumpScript))
         {
             jumpScript.JumpHeight *= JumpMultiplier;
-        }
-    }
-
-    public override void Remove(GameObject target)
-    {
-        if (target.TryGetComponent<PlayerJump>(out PlayerJump jumpScript))
-        {
-            jumpScript.JumpHeight /= JumpMultiplier;
         }
     }
 }
