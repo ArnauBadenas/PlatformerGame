@@ -32,4 +32,4 @@ This game sources are licensed under MIT license. Check [LICENSE](LICENSE) for f
 
 For additional licenses (art and music) see [LICENSE](Assets/LICENSES.txt).
 
-PlatformerGame © 2026 by Alexia Martínez, Carla Pallés, Arnau Badenas
+PlatformerGame © 2026 by Arnau Badenas, Alexia Martínez, Carla Pallés
